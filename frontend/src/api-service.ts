@@ -3,8 +3,8 @@ import { ApiResponse } from './location.types';
 // API Key for authentication
 const API_KEY = 'locations-api-key-12345';
 
-// Base URL for API endpoints
-const API_BASE_URL = 'http://localhost:8000/api';
+// Base URL for API endpoints - usando ruta relativa directamente
+const API_BASE_URL = '/api';
 
 /**
  * Service for fetching locations from the API
@@ -17,7 +17,9 @@ export const getLocations = async (params?: URLSearchParams): Promise<ApiRespons
     if (params && params.toString()) {
       url += `?${params.toString()}`;
     }
-
+    
+    console.log('Fetching from URL:', url); // Para depuración
+    
     const response = await fetch(url, {
       method: 'GET',
       headers: {
@@ -27,7 +29,9 @@ export const getLocations = async (params?: URLSearchParams): Promise<ApiRespons
     });
 
     if (!response.ok) {
-      throw new Error(`Error: ${response.status}`);
+      const errorText = await response.text();
+      console.error('Response not OK:', response.status, errorText);
+      throw new Error(`Error: ${response.status} - ${errorText}`);
     }
 
     return await response.json();
@@ -43,7 +47,10 @@ export const getLocations = async (params?: URLSearchParams): Promise<ApiRespons
  */
 export const getLocationByCode = async (code: string): Promise<ApiResponse> => {
   try {
-    const response = await fetch(`${API_BASE_URL}/locations/${code}`, {
+    const url = `${API_BASE_URL}/locations/${code}`;
+    console.log('Fetching specific location from URL:', url); // Para depuración
+    
+    const response = await fetch(url, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -52,7 +59,9 @@ export const getLocationByCode = async (code: string): Promise<ApiResponse> => {
     });
 
     if (!response.ok) {
-      throw new Error(`Error: ${response.status}`);
+      const errorText = await response.text();
+      console.error('Response not OK:', response.status, errorText);
+      throw new Error(`Error: ${response.status} - ${errorText}`);
     }
 
     return await response.json();

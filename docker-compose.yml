@@ -43,14 +43,14 @@ services:
   # Servicio de React (Frontend)
   frontend:
     build:
-      context: ./frontend/app
+      context: ./frontend
       dockerfile: Dockerfile
     container_name: prueba_joonik_frontend
     restart: unless-stopped
     ports:
-      - "3000"
+      - "3002"
     volumes:
-      - ./frontend/app:/app:cached
+      - ./frontend:/app:cached
       - /app/node_modules
     environment:
       - REACT_APP_API_URL=http://localhost:8000/api

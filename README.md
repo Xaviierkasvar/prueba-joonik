@@ -18,10 +18,9 @@ laravel-react-locations/
 │   ├── tests/             # Pruebas automatizadas
 │   └── .env               # Variables de entorno
 ├── frontend/              # Frontend React
-│   └── app/               # Aplicación React
-│       ├── public/        # Archivos estáticos
-│       ├── src/           # Código fuente React
-│       └── package.json   # Dependencias
+│   ├── public/            # Archivos estáticos
+│   ├── src/               # Código fuente React
+│   └── package.json       # Dependencias
 ├── docker/                # Configuración Docker
 │   └── nginx/             # Configuración de Nginx
 ├── docker-compose.yml     # Configuración de servicios Docker
@@ -39,7 +38,7 @@ laravel-react-locations/
 1. Clona el repositorio:
    ```bash
    git clone https://github.com/Xaviierkasvar/prueba-joonik.git
-   cd laravel-react-locations
+   cd backend
    ```
 
 2. Configura el archivo .env.docker en el directorio backend:
@@ -140,7 +139,7 @@ php artisan test
 Ejecuta las pruebas del frontend con:
 
 ```
-cd frontend/app
+cd frontend
 npm test
 ```
 
