@@ -1,23 +1,901 @@
-/.phpunit.cache
-/node_modules
-/public/build
+# Laravel
+/.env
+/.env.backup
+/.env.local
+/.env.testing
+/.env.production
+/.env.dusk.local
+
+# Log files
+/storage/logs/*.log
+
+# SQLite database
+/database/database.sqlite
+
+# Laravel specific
+/vendor/
 /public/hot
 /public/storage
 /storage/*.key
-/storage/pail
-/vendor
-.env
-.env.backup
-.env.production
-.phpactor.json
-.phpunit.result.cache
-Homestead.json
-Homestead.yaml
-npm-debug.log
-yarn-error.log
-/auth.json
-/.fleet
-/.idea
-/.nova
-/.vscode
-/.zed
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# PHP
+*.php-errors.log
+
+# Tests
+/.phpunit.result.cache
+/.phpunit.result.cache-*.json
+
+# Docker
+.docker
+
+# Build
+/build
+/dist
+
+# Cache
+/storage/framework/cache/
+/storage/framework/sessions/
+/storage/framework/testing/
+/storage/framework/views/
+
+# Composer
+/composer.lock
+/composer.phar
+
+# Node
+/node_modules
+/.pnp
+.pnp.js
+
+# Vite
+/node_modules/
+/.pnp
+.pnp.js
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories and files
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Laravel specific
+/public/hot
+/public/storage
+/storage/*.key
+
+# Laravel Forge
+/.forge
+
+# Laravel Envoy
+/.envoy
+
+# PHP
+*.php-errors.log
+
+# PHPunit
+/phpunit.xml
+/phpunit.xml.dist
+
+# Tests
+/.phpunit.result.cache
+/phpunit.result.cache
+
+# Docker
+.docker
+
+# Local development
+/.env.local
+/.env.testing
+/.env.staging
+/.env.production
+
+# Laravel specific
+/vendor/
+/public/hot
+/public/storage
+/storage/*.key
+
+# Laravel Forge
+/.forge
+
+# Laravel Envoy
+/.envoy
+
+# PHP
+*.php-errors.log
+
+# PHPunit
+/phpunit.xml
+/phpunit.xml.dist
+
+# Tests
+/.phpunit.result.cache
+/phpunit.result.cache
+
+# Docker
+.docker
+
+# Local development
+/.env.local
+/.env.testing
+/.env.staging
+/.env.production
+
+# Laravel specific
+/vendor/
+/public/hot
+/public/storage
+/storage/*.key
+
+# Laravel Forge
+/.forge
+
+# Laravel Envoy
+/.envoy
+
+# PHP
+*.php-errors.log
+
+# PHPunit
+/phpunit.xml
+/phpunit.xml.dist
+
+# Tests
+/.phpunit.result.cache
+/phpunit.result.cache
+
+# Docker
+.docker
+
+# Local development
+/.env.local
+/.env.testing
+/.env.staging
+/.env.production
+
+# Laravel specific
+/vendor/
+/public/hot
+/public/storage
+/storage/*.key
+
+# Laravel Forge
+/.forge
+
+# Laravel Envoy
+/.envoy
+
+# PHP
+*.php-errors.log
+
+# PHPunit
+/phpunit.xml
+/phpunit.xml.dist
+
+# Tests
+/.phpunit.result.cache
+/phpunit.result.cache
+
+# Docker
+.docker
+
+# Local development
+/.env.local
+/.env.testing
+/.env.staging
+/.env.production
+
+# Laravel specific
+/vendor/
+/public/hot
+/public/storage
+/storage/*.key
+
+# Laravel Forge
+/.forge
+
+# Laravel Envoy
+/.envoy
+
+# PHP
+*.php-errors.log
+
+# PHPunit
+/phpunit.xml
+/phpunit.xml.dist
+
+# Tests
+/.phpunit.result.cache
+/phpunit.result.cache
+
+# Docker
+.docker
+
+# Local development
+/.env.local
+/.env.testing
+/.env.staging
+/.env.production
+
+# Laravel specific
+/vendor/
+/public/hot
+/public/storage
+/storage/*.key
+
+# Laravel Forge
+/.forge
+
+# Laravel Envoy
+/.envoy
+
+# PHP
+*.php-errors.log
+
+# PHPunit
+/phpunit.xml
+/phpunit.xml.dist
+
+# Tests
+/.phpunit.result.cache
+/phpunit.result.cache
+
+# Docker
+.docker
+
+# Local development
+/.env.local
+/.env.testing
+/.env.staging
+/.env.production
+
+# Laravel specific
+/vendor/
+/public/hot
+/public/storage
+/storage/*.key
+
+# Laravel Forge
+/.forge
+
+# Laravel Envoy
+/.envoy
+
+# PHP
+*.php-errors.log
+
+# PHPunit
+/phpunit.xml
+/phpunit.xml.dist
+
+# Tests
+/.phpunit.result.cache
+/phpunit.result.cache
+
+# Docker
+.docker
+
+# Local development
+/.env.local
+/.env.testing
+/.env.staging
+/.env.production
+
+# Laravel specific
+/vendor/
+/public/hot
+/public/storage
+/storage/*.key
+
+# Laravel Forge
+/.forge
+
+# Laravel Envoy
+/.envoy
+
+# PHP
+*.php-errors.log
+
+# PHPunit
+/phpunit.xml
+/phpunit.xml.dist
+
+# Tests
+/.phpunit.result.cache
+/phpunit.result.cache
+
+# Docker
+.docker
+
+# Local development
+/.env.local
+/.env.testing
+/.env.staging
+/.env.production
+
+# Laravel specific
+/vendor/
+/public/hot
+/public/storage
+/storage/*.key
+
+# Laravel Forge
+/.forge
+
+# Laravel Envoy
+/.envoy
+
+# PHP
+*.php-errors.log
+
+# PHPunit
+/phpunit.xml
+/phpunit.xml.dist
+
+# Tests
+/.phpunit.result.cache
+/phpunit.result.cache
+
+# Docker
+.docker
+
+# Local development
+/.env.local
+/.env.testing
+/.env.staging
+/.env.production
+
+# Laravel specific
+/vendor/
+/public/hot
+/public/storage
+/storage/*.key
+
+# Laravel Forge
+/.forge
+
+# Laravel Envoy
+/.envoy
+
+# PHP
+*.php-errors.log
+
+# PHPunit
+/phpunit.xml
+/phpunit.xml.dist
+
+# Tests
+/.phpunit.result.cache
+/phpunit.result.cache
+
+# Docker
+.docker
+
+# Local development
+/.env.local
+/.env.testing
+/.env.staging
+/.env.production
+
+# Laravel specific
+/vendor/
+/public/hot
+/public/storage
+/storage/*.key
+
+# Laravel Forge
+/.forge
+
+# Laravel Envoy
+/.envoy
+
+# PHP
+*.php-errors.log
+
+# PHPunit
+/phpunit.xml
+/phpunit.xml.dist
+
+# Tests
+/.phpunit.result.cache
+/phpunit.result.cache
+
+# Docker
+.docker
+
+# Local development
+/.env.local
+/.env.testing
+/.env.staging
+/.env.production
+
+# Laravel specific
+/vendor/
+/public/hot
+/public/storage
+/storage/*.key
+
+# Laravel Forge
+/.forge
+
+# Laravel Envoy
+/.envoy
+
+# PHP
+*.php-errors.log
+
+# PHPunit
+/phpunit.xml
+/phpunit.xml.dist
+
+# Tests
+/.phpunit.result.cache
+/phpunit.result.cache
+
+# Docker
+.docker
+
+# Local development
+/.env.local
+/.env.testing
+/.env.staging
+/.env.production
+
+# Laravel specific
+/vendor/
+/public/hot
+/public/storage
+/storage/*.key
+
+# Laravel Forge
+/.forge
+
+# Laravel Envoy
+/.envoy
+
+# PHP
+*.php-errors.log
+
+# PHPunit
+/phpunit.xml
+/phpunit.xml.dist
+
+# Tests
+/.phpunit.result.cache
+/phpunit.result.cache
+
+# Docker
+.docker
+
+# Local development
+/.env.local
+/.env.testing
+/.env.staging
+/.env.production
+
+# Laravel specific
+/vendor/
+/public/hot
+/public/storage
+/storage/*.key
+
+# Laravel Forge
+/.forge
+
+# Laravel Envoy
+/.envoy
+
+# PHP
+*.php-errors.log
+
+# PHPunit
+/phpunit.xml
+/phpunit.xml.dist
+
+# Tests
+/.phpunit.result.cache
+/phpunit.result.cache
+
+# Docker
+.docker
+
+# Local development
+/.env.local
+/.env.testing
+/.env.staging
+/.env.production
+
+# Laravel specific
+/vendor/
+/public/hot
+/public/storage
+/storage/*.key
+
+# Laravel Forge
+/.forge
+
+# Laravel Envoy
+/.envoy
+
+# PHP
+*.php-errors.log
+
+# PHPunit
+/phpunit.xml
+/phpunit.xml.dist
+
+# Tests
+/.phpunit.result.cache
+/phpunit.result.cache
+
+# Docker
+.docker
+
+# Local development
+/.env.local
+/.env.testing
+/.env.staging
+/.env.production
+
+# Laravel specific
+/vendor/
+/public/hot
+/public/storage
+/storage/*.key
+
+# Laravel Forge
+/.forge
+
+# Laravel Envoy
+/.envoy
+
+# PHP
+*.php-errors.log
+
+# PHPunit
+/phpunit.xml
+/phpunit.xml.dist
+
+# Tests
+/.phpunit.result.cache
+/phpunit.result.cache
+
+# Docker
+.docker
+
+# Local development
+/.env.local
+/.env.testing
+/.env.staging
+/.env.production
+
+# Laravel specific
+/vendor/
+/public/hot
+/public/storage
+/storage/*.key
+
+# Laravel Forge
+/.forge
+
+# Laravel Envoy
+/.envoy
+
+# PHP
+*.php-errors.log
+
+# PHPunit
+/phpunit.xml
+/phpunit.xml.dist
+
+# Tests
+/.phpunit.result.cache
+/phpunit.result.cache
+
+# Docker
+.docker
+
+# Local development
+/.env.local
+/.env.testing
+/.env.staging
+/.env.production
+
+# Laravel specific
+/vendor/
+/public/hot
+/public/storage
+/storage/*.key
+
+# Laravel Forge
+/.forge
+
+# Laravel Envoy
+/.envoy
+
+# PHP
+*.php-errors.log
+
+# PHPunit
+/phpunit.xml
+/phpunit.xml.dist
+
+# Tests
+/.phpunit.result.cache
+/phpunit.result.cache
+
+# Docker
+.docker
+
+# Local development
+/.env.local
+/.env.testing
+/.env.staging
+/.env.production
+
+# Laravel specific
+/vendor/
+/public/hot
+/public/storage
+/storage/*.key
+
+# Laravel Forge
+/.forge
+
+# Laravel Envoy
+/.envoy
+
+# PHP
+*.php-errors.log
+
+# PHPunit
+/phpunit.xml
+/phpunit.xml.dist
+
+# Tests
+/.phpunit.result.cache
+/phpunit.result.cache
+
+# Docker
+.docker
+
+# Local development
+/.env.local
+/.env.testing
+/.env.staging
+/.env.production
+
+# Laravel specific
+/vendor/
+/public/hot
+/public/storage
+/storage/*.key
+
+# Laravel Forge
+/.forge
+
+# Laravel Envoy
+/.envoy
+
+# PHP
+*.php-errors.log
+
+# PHPunit
+/phpunit.xml
+/phpunit.xml.dist
+
+# Tests
+/.phpunit.result.cache
+/phpunit.result.cache
+
+# Docker
+.docker
+
+# Local development
+/.env.local
+/.env.testing
+/.env.staging
+/.env.production
+
+# Laravel specific
+/vendor/
+/public/hot
+/public/storage
+/storage/*.key
+
+# Laravel Forge
+/.forge
+
+# Laravel Envoy
+/.envoy
+
+# PHP
+*.php-errors.log
+
+# PHPunit
+/phpunit.xml
+/phpunit.xml.dist
+
+# Tests
+/.phpunit.result.cache
+/phpunit.result.cache
+
+# Docker
+.docker
+
+# Local development
+/.env.local
+/.env.testing
+/.env.staging
+/.env.production
+
+# Laravel specific
+/vendor/
+/public/hot
+/public/storage
+/storage/*.key
+
+# Laravel Forge
+/.forge
+
+# Laravel Envoy
+/.envoy
+
+# PHP
+*.php-errors.log
+
+# PHPunit
+/phpunit.xml
+/phpunit.xml.dist
+
+# Tests
+/.phpunit.result.cache
+/phpunit.result.cache
+
+# Docker
+.docker
+
+# Local development
+/.env.local
+/.env.testing
+/.env.staging
+/.env.production
+
+# Laravel specific
+/vendor/
+/public/hot
+/public/storage
+/storage/*.key
+
+# Laravel Forge
+/.forge
+
+# Laravel Envoy
+/.envoy
+
+# PHP
+*.php-errors.log
+
+# PHPunit
+/phpunit.xml
+/phpunit.xml.dist
+
+# Tests
+/.phpunit.result.cache
+/phpunit.result.cache
+
+# Docker
+.docker
+
+# Local development
+/.env.local
+/.env.testing
+/.env.staging
+/.env.production
+
+# Laravel specific
+/vendor/
+/public/hot
+/public/storage
+/storage/*.key
+
+# Laravel Forge
+/.forge
+
+# Laravel Envoy
+/.envoy
+
+# PHP
+*.php-errors.log
+
+# PHPunit
+/phpunit.xml
+/phpunit.xml.dist
+
+# Tests
+/.phpunit.result.cache
+/phpunit.result.cache
+
+# Docker
+.docker
+
+# Local development
+/.env.local
+/.env.testing
+/.env.staging
+/.env.production
+
+# Laravel specific
+/vendor/
+/public/hot
+/public/storage
+/storage/*.key
+
+# Laravel Forge
+/.forge
+
+# Laravel Envoy
+/.envoy
+
+# PHP
+*.php-errors.log
+
+# PHPunit
+/phpunit.xml
+/phpunit.xml.dist
+
+# Tests
+/.phpunit.result.cache
+/phpunit.result.cache
+
+# Docker
+.docker
+
+# Local development
+/.env.local
+/.env.testing
+/.env.staging
+/.env.production
+
+# Laravel specific
+/vendor/
+/public/hot
+/public/storage
+/storage/*.key
+
+# Laravel Forge
+/.forge
+
+# Laravel Envoy
+/.envoy
+
+# PHP
+*.php-errors.log
+
+# PHPunit
+/phpunit.xml
+/phpunit.xml.dist
+
+# Tests
+/.phpunit.result.cache
+/phpunit.result.cache
+
+# Docker
+.docker
