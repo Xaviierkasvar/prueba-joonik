@@ -1,0 +1,88 @@
+version: '3.8'
+
+services:
+  # Servicio de PostgreSQL
+  db:
+    image: postgres:15
+    container_name: db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${DB_DATABASE:-prueba_joonik_db}
+      POSTGRES_USER: ${DB_USERNAME:-postgres}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-password}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    networks:
+      - prueba_joonik_network
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+  # Servicio de Laravel (Backend)
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: prueba_joonik_backend
+    restart: unless-stopped
+    volumes:
+      - ./backend:/var/www/html:cached
+      - ./backend/vendor:/var/www/html/vendor:delegated
+    env_file:
+      - ./backend/.env.docker
+    networks:
+      - prueba_joonik_network
+    depends_on:
+      db:
+        condition: service_started
+
+  # Servicio de React (Frontend)
+  frontend:
+    build:
+      context: ./frontend/app
+      dockerfile: Dockerfile
+    container_name: prueba_joonik_frontend
+    restart: unless-stopped
+    ports:
+      - "3000"
+    volumes:
+      - ./frontend/app:/app:cached
+      - /app/node_modules
+    environment:
+      - REACT_APP_API_URL=http://localhost:8000/api
+    networks:
+      - prueba_joonik_network
+    depends_on:
+      - backend
+
+  # Servicio de Nginx
+  nginx:
+    image: nginx:alpine
+    container_name: prueba_joonik_nginx
+    restart: unless-stopped
+    ports:
+      - "8000:80"
+    volumes:
+      - ./backend:/var/www/html:cached
+      - ./docker/nginx/conf.d:/etc/nginx/conf.d
+    networks:
+      - prueba_joonik_network
+    depends_on:
+      - backend
+    healthcheck:
+      test: ["CMD", "nginx", "-t"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+networks:
+  prueba_joonik_network:
+    driver: bridge
+
+volumes:
+  postgres_data:
+    driver: local
